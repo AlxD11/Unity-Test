@@ -55,13 +55,12 @@
         updateBannerVisibility();
       }
 
-      //EDITED - changed buildURL from Build to https://alxd11.github.io/Unity-Test/Build
-      var buildUrl = "https://alxd11.github.io/Unity-Test";
-      var loaderUrl = buildUrl + "/Build.loader.js";
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/BuildNoCompression.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Build.data.gz",
-        frameworkUrl: buildUrl + "/Build.framework.js.gz",
-        codeUrl: buildUrl + "/Build.wasm.gz",
+        dataUrl: buildUrl + "/BuildNoCompression.data",
+        frameworkUrl: buildUrl + "/BuildNoCompression.framework.js",
+        codeUrl: buildUrl + "/BuildNoCompression.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Unity Test",
         productName: "Yeehaw The Second",
